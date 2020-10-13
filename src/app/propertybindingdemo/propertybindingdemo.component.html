@@ -1,0 +1,15 @@
+<p>propertybindingdemo works!</p>
+
+
+<div>
+  <label for="firstName"> Enter First Name</label>
+<input type="text" [name]="firstNameField" id="firstName"
+value ="Welcome User">
+</div>
+
+<div>
+  <label for="lastName"> Enter Last Name</label>
+<input type="text" name="{{lastNameField}}" id="lastName"
+value ="Welcome User" bind-disabled="status">
+
+</div>

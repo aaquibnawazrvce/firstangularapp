@@ -1,0 +1,11 @@
+<p>templatereferencedemo works!</p>
+
+<div>
+  <label for="firstName">Enter the First Name: </label>
+  <input type="text" #firstNameTR name="firstName" id="firstName" />
+
+  <button (click)="sendData(firstNameTR)">Send Data</button>
+
+</div>
+
+<div> The entered value is :{{firstNameProvided}}</div>
