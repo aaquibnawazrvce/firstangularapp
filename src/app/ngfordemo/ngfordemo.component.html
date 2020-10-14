@@ -1,0 +1,18 @@
+<p>ngfordemo works!</p>
+
+<h1>Wallet Information</h1>
+
+<div *ngFor="let walletObj of paymentWalletInfoList; index as indicator">
+
+  <th> Sl No : {{indicator}} isDefault :{{walletObj.isDefault}}</th>
+  <tr>
+
+    <td>
+       Wallet Name : {{walletObj.walletName}}
+    </td>
+    <td>
+          Max Amount :  $ {{walletObj.maxAmount}}
+   </td>
+  </tr>
+
+</div>

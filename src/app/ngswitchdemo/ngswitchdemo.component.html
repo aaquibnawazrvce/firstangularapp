@@ -1,0 +1,13 @@
+<p>ngswitchdemo works!</p>
+
+<div>
+  <label for="payWalletText">Enter the Pay Wallet Text: </label>
+  <input type="text" [(ngModel)]="payWalletText" name="payWalletText"
+  id="payWalletText"  (blur)="afterEnteringPayWallet()" />
+</div>
+
+<div [ngSwitch]='walletType'>
+  <div *ngSwitchCase="'GOOGLE'"> Wallet Type is Google</div>
+  <div *ngSwitchCase="'AMAZONPAY'"> Wallet Type is Amazon Pay</div>
+  <div *ngSwitchDefault> Wallet Type Not Found</div>
+</div>

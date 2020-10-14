@@ -1,0 +1,16 @@
+<p>walletparent works!</p>
+<h1>Wallet Information Parent</h1>
+
+<div *ngFor="let walletObj of paymentWalletInfoList;">
+
+<!--
+  For First Demo of Component Interaction
+  <app-walletchilddetails [dataFromParent]="walletObj"></app-walletchilddetails> -->
+
+  <!-- For Second Demo of Parent to child-->
+  <app-walletchilddetails [dataFromParent]="walletObj"
+ [headTextParent]="headingParent"></app-walletchilddetails>
+
+
+
+

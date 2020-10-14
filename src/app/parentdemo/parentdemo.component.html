@@ -1,0 +1,9 @@
+<p>parentdemo works!</p>
+
+New Parent data recieved from Child <h2>{{parentmessage}} </h2>
+<div>
+ <app-childdemo
+ (eventToSendMessage)="parentmessage=$event">
+</app-childdemo>
+</div>
+

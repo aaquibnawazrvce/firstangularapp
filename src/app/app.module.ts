@@ -9,6 +9,14 @@ import { PropertybindingdemoComponent } from './propertybindingdemo/propertybind
 import { StylebindingdemoComponent } from './stylebindingdemo/stylebindingdemo.component';
 import { EventbindingdemoComponent } from './eventbindingdemo/eventbindingdemo.component';
 import { TemplatereferencedemoComponent } from './templatereferencedemo/templatereferencedemo.component';
+import { TwowaybindingdemoComponent } from './twowaybindingdemo/twowaybindingdemo.component';
+import { NgifdemoComponent } from './ngifdemo/ngifdemo.component';
+import { NgswitchdemoComponent } from './ngswitchdemo/ngswitchdemo.component';
+import { NgfordemoComponent } from './ngfordemo/ngfordemo.component';
+import { WalletparentComponent } from './walletparent/walletparent.component';
+import { WalletchilddetailsComponent } from './walletchilddetails/walletchilddetails.component';
+import { ParentdemoComponent } from './parentdemo/parentdemo.component';
+import { ChilddemoComponent } from './childdemo/childdemo.component';
 
 @NgModule({
   declarations: [
@@ -18,8 +26,16 @@ import { TemplatereferencedemoComponent } from './templatereferencedemo/template
     PropertybindingdemoComponent,
     StylebindingdemoComponent,
     EventbindingdemoComponent,
-    TemplatereferencedemoComponent
-    ],
+    TemplatereferencedemoComponent,
+    TwowaybindingdemoComponent,
+    NgifdemoComponent,
+    NgswitchdemoComponent,
+    NgfordemoComponent,
+    WalletparentComponent,
+    WalletchilddetailsComponent,
+    ParentdemoComponent,
+    ChilddemoComponent
+  ],
   imports: [
     BrowserModule,
     FormsModule

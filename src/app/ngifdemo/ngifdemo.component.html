@@ -1,0 +1,24 @@
+<p>ngifdemo works!</p>
+
+<div>
+  <label for="payWalletText">Enter the Pay Wallet Text: </label>
+  <input type="text" [(ngModel)]="payWalletText" name="payWalletText"
+  id="payWalletText"  (blur)="afterEnteringPayWallet()" />
+</div>
+
+<div> The entered value is :{{payWalletText}}</div>
+<!--
+  // FIrst do if example and then take it forward to else example
+<div *ngIf="status">
+This is Google Pay Wallet
+</div>
+-->
+<div *ngIf="status; else otherwallets">
+  This is Google Pay Wallet
+</div>
+
+<ng-template #otherwallets>
+  <div *ngIf="(payWalletText!=null && payWalletText!='')">
+  This is other wallet and value is {{payWalletText}}
+</div>
+</ng-template>
