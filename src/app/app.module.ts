@@ -17,6 +17,7 @@ import { WalletparentComponent } from './walletparent/walletparent.component';
 import { WalletchilddetailsComponent } from './walletchilddetails/walletchilddetails.component';
 import { ParentdemoComponent } from './parentdemo/parentdemo.component';
 import { ChilddemoComponent } from './childdemo/childdemo.component';
+import { PipedemoComponent } from './pipedemo/pipedemo.component';
 
 @NgModule({
   declarations: [
@@ -34,7 +35,8 @@ import { ChilddemoComponent } from './childdemo/childdemo.component';
     WalletparentComponent,
     WalletchilddetailsComponent,
     ParentdemoComponent,
-    ChilddemoComponent
+    ChilddemoComponent,
+    PipedemoComponent
   ],
   imports: [
     BrowserModule,

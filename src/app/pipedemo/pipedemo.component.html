@@ -1,0 +1,67 @@
+<p>pipedemo works!</p>
+
+<div>
+  <label for="textToFormat"> Enter the Text to Format: </label>
+  <input type="text" name="textToFormat" [(ngModel)]="textToFormat">
+</div>
+<div>
+  {{textToFormat}}
+</div>
+<div>
+  {{textToFormat | uppercase}}
+</div>
+<div>
+  {{textToFormat | lowercase}}
+</div>
+<div>
+  {{textToFormat | titlecase}}
+</div>
+<div>
+  {{textToFormat | slice: 2:4}}
+</div>
+
+<div>
+{{walletKind | json}}
+</div>
+
+<!-- Add this example as a third demo -->
+<div>
+  <label for="numberToFormat"> Enter the Number to Format: </label>
+  <input type="text" name="numberToFormat" [(ngModel)]="numberToFormat">
+</div>
+<div>
+{{numberToFormat}}
+</div>
+
+<div>
+  {{numberToFormat | number:"2.2-3"}}
+</div>
+
+<div>
+  {{numberToFormat | percent}}
+</div>
+
+<div>
+  {{numberToFormat | currency}}
+</div>
+
+<div>
+  {{numberToFormat | currency :'EUR'}}
+</div>
+
+<div>
+  <label for="dateToFormat"> Enter the Date to Format: </label>
+  <input type="date" name="dateToFormat" [(ngModel)]="dateToFormat">
+</div>
+<div>
+{{dateToFormat}}
+</div>
+<div>
+ {{dateToFormat | date: 'medium'}}
+</div>
+<div>
+{{dateToFormat | date: 'mediumDate'}}
+</div>
+<div>
+{{dateToFormat | date: 'mediumTime'}}
+</div>
